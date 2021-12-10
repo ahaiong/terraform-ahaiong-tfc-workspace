@@ -10,6 +10,13 @@ resource "tfe_workspace" "this" {
   }
 }
 
+resource "tfe_variable" "eqx_auth_token" {
+  key          = "EQX_AUTH_TOKEN"
+  value        = var.eqx_auth_token
+  category     = "env"
+  workspace_id = tfe_workspace.this.id
+}
+
 resource "tfe_variable" "aws_default_region" {
   key          = "AWS_DEFAULT_REGION"
   value        = var.aws_default_region

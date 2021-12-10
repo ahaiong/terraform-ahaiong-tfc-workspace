@@ -1,13 +1,17 @@
 variable "name" {}
 #alphabetical order from below onwards please
+
 variable "aws_access_key_id" {
-  default = ""
+  default = "changeme"
 }
 variable "aws_default_region" {
-  default = ""
+  default = "changeme"
 }
 variable "aws_secret_access_key" {
-  default = ""
+  default = "changeme"
+}
+variable "eqx_auth_token" {
+  default = "changeme"
 }
 variable "organization_name" {
   default = ""
